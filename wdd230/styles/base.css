@@ -23,7 +23,9 @@ body {
     align-items: center;
 }
 
-a {
+
+
+nav>a {
     color: white;
     text-decoration: none;
 }
