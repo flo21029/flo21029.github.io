@@ -1,0 +1,29 @@
+.h1-main-title {
+    background-color: rgb(79, 116, 175);
+}
+
+.h2-scenarios {
+    background-color: rgb(103, 174, 120);
+}
+
+.h2-color-schema {
+    background-color: rgb(103, 174, 120);
+}
+
+.h2-typography {
+    background-color: rgb(103, 174, 120);
+}
+
+.p-first-color {
+    background-color: rgb(103, 174, 120);
+    color: white;
+}
+
+.p-second-color {
+    background-color: rgb(79, 116, 175);
+    color: white;
+}
+
+.img-wireframe {
+    width: 100%;
+}
