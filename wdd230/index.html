@@ -52,6 +52,35 @@
             <div>Additional information</div>
         </section>
     </main>
+    <form method="POST" class="form-user-information">
+        <div id="form-message">Form Input</div>
+
+        <label id="lbl-full_name" for="full_name">Full Name</label>
+        <input type="text" id="full_name" minlength="1" maxlength="50" required>
+
+        <label id="lbl-email" for="email">Email</label>
+        <input type="email" id="email" minlength="1" maxlength="100" required>
+
+        <label id="lbl-rating" for="rating">Rating</label>
+        <input type="range" id="rating" min="1" max="5" list="five" required>
+        <datalist id="five">
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+            <option value="5" label="5"></option>
+        </datalist>
+
+        <label id="lbl-username" for="username">Username</label>
+        <input type="password" id="username" minlength="1" maxlength="50" pattern="[a-zA-Z0-9]{5,12}"  required>
+
+        <label id="lbl-verify_username" for="verify_username">Re enter Username</label>
+        <input type="password" id="verify_username" minlength="1" maxlength="50" pattern="[a-zA-Z0-9]{5,12}"  required>
+
+        <button type="submit" id="btn-user-form">Submit</button>
+
+    </form>
+
     <footer class="footer-grid">
         <span class="span-copyright">&copy;Copyright</span>
         <span class="span-student-name">Manuel Armando Flores Yáñez</span>
