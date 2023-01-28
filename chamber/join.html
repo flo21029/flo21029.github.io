@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="author" content="Manuel Flores Yáñez">
+    <meta name="description" content="Chamber of commerce site allowing anyone to join">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles/base.css" rel="stylesheet">
+    <link href="./styles/larger.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+    <title>Join the chamber of commerce</title>
+</head>
+
+<body>
+    <header class="header_join">
+        <img alt="logo of the chamber of commerce" class="logo-chamber" src="./images/logo.jpg">
+        <h1 class="h1-chamber-name">Santiago Chamber of commerce</h1>
+    </header>
+    <nav class="nav_main_join">
+        <a href="https://www.linkedin.com/">Free education</a>
+        <a href="https://www.byui.edu/">Networking with companies</a>
+        <a href="https://www.byui.edu/">Summary of most required skills</a>
+    </nav>
+
+    <main class="main_join_grid">
+        <section class="benefits_description">
+            <div class="benefits">
+                <h2>Description of benefits</h2>
+                <p id="p_benefits_description">Silver membership: It is for companies that desire to participate in all
+                    events and inmerse themselves in our gatherings, you will be allowed to participate in the middle
+                    seats, and even though you will not be introduced to anyone you can still contact as many people as
+                    you desire, you will have everybody's names in the gatherings, you will be allowed to participate of
+                    the food or snacks by a small fee, you will be shown the degrees and courses offered by certain
+                    universities, and several managers will show they perspective on how those degrees or skills are a
+                    good fit for jobs in their companies, and what you can do to be more prepared for those positions in
+                    those companies. You will be given a sticker with a silver color to show how valuable you are for
+                    the chamber</p>
+            </div>
+            <form method="GET" action="thankyou.html" class="form_user_information">
+                <div id="form_message">
+                    <h2>Description of benefits</h2>
+                    <p></p>
+                </div>
+
+                <label class="separation" id="lbl_first_name" for="first_name">First Name<br>
+                    <input name="first_name" type="text" id="first_name" minlength="1" maxlength="50" required>
+                </label>
+                <label class="separation" id="lbl_last_name" for="last_name">Last Name<br>
+                    <input name="last_name" type="text" id="last_name" minlength="1" maxlength="50" required>
+                </label>
+
+                <label class="separation" id="lbl_business_positon" for="business_positon">Business position title<br>
+                    <input name="business_positon" type="text" id="business_positon" minlength="1" maxlength="50">
+                </label>
+
+                <label class="separation" id="lbl_email" for="email">Email<br>
+                    <input name="email" type="email" id="email" minlength="1" maxlength="100" required>
+                </label>
+
+                <label class="separation" id="lbl_phone" for="phone">Cell Phone number<br>
+                    <input name="phone" type="tel" id="phone" minlength="1" maxlength="100" required>
+                </label>
+
+                <label class="separation" id="lbl_business_name" for="business_name">Business Name/Title<br>
+                    <input name="business_name" type="text" id="business_name" minlength="1" maxlength="50" required>
+                </label>
+
+                <label class="separation" id="lbl_membership_level" for="membership_level">Meembership level<br>
+                    <input name="membership_level" onchange="updateDescription()" type="range" id="membership_level"
+                        min="1" max="4" list="memberships">
+                </label>
+                <div class="range-elements">
+                    <p>NP</p>
+                    <p>BRONZE</p>
+                    <p>SILVER</p>
+                    <p>GOLD</p>
+                </div>
+
+                <datalist id="memberships">
+                    <option value="NP" label="NP"></option>
+                    <option value="Bronze" label="Bronze"></option>
+                    <option value="Silver" label="Silver"></option>
+                    <option value="Gold" label="Gold"></option>
+                </datalist>
+
+
+                <label class="separation" id="lbl_business_description" for="business_description">Business description
+                    area<br>
+                    <textarea name="business_description" id="business_description" minlength="1" maxlength="500"
+                        required></textarea>
+                </label>
+
+                <div class="id_current_date"></div>
+                <button name="btn_user_form" type="submit" id="btn_user_form">Submit</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer_grid">
+        <span class="span-copyright">&copy;Copyright</span>
+        <span class="span-student-name">Manuel Armando Flores Yáñez</span>
+        <span class="span-country">Chile</span>
+        <span class="highlight" id="lastModified"></span>
+    </footer>
+    <script src="./scripts/chamber.js"></script>
+</body>
+
+</html>

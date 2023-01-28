@@ -1,0 +1,55 @@
+@media only screen and (min-width: 600px) {
+    /* Size for Desktop Screen */
+
+
+    .footer_grid {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        background-color: rgba(103, 132, 250, 0.698);
+    }
+
+    .span-copyright {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        margin: auto 0 auto auto;
+    }
+
+    .span-student-name {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        margin: auto;
+    }
+
+    .span-country {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        margin: auto auto auto 0;
+    }
+
+    .highlight {
+        color: rgb(211, 251, 100);
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        margin: auto;
+    }
+
+    .benefits_description {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        background-color: rgb(212, 115, 98);
+    }
+
+    .section_thank_you {
+        text-align: center;
+    }
+
+    .main_thank_you {
+        background-color: rgb(111, 181, 199);
+    }
+
+    .section_thank_you>h2 {
+        margin: 0;
+        padding: 50px;
+    }
+
+}
